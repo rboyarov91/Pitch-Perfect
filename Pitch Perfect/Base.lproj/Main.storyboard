@@ -27,28 +27,42 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnZ-z3-k22"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeY-1X-b9K">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FDz-TS-eWl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NIb-oC-fDY"/>
+                            <constraint firstItem="XeY-1X-b9K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="65.5" id="QoL-7D-TcZ"/>
                             <constraint firstItem="FDz-TS-eWl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V9m-Sq-W9E"/>
+                            <constraint firstItem="XeY-1X-b9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ocb-XZ-nsI"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="FDz-TS-eWl"/>
+                                <exclude reference="XeY-1X-b9K"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="NIb-oC-fDY"/>
                                 <exclude reference="V9m-Sq-W9E"/>
+                                <exclude reference="QoL-7D-TcZ"/>
+                                <exclude reference="ocb-XZ-nsI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="FDz-TS-eWl"/>
+                                <include reference="XeY-1X-b9K"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="NIb-oC-fDY"/>
                                 <include reference="V9m-Sq-W9E"/>
+                                <include reference="QoL-7D-TcZ"/>
+                                <include reference="ocb-XZ-nsI"/>
                             </mask>
                         </variation>
                     </view>
