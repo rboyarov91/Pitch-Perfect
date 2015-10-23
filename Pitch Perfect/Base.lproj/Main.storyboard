@@ -24,28 +24,40 @@
                                     <action selector="playSlowSound:" destination="xkU-DK-ARX" eventType="touchUpInside" id="ccx-Z2-UGx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-oD-XXR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="rabbit"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mnJ-oD-XXR" secondAttribute="trailing" constant="9" id="9he-eZ-GyM"/>
+                            <constraint firstItem="mnJ-oD-XXR" firstAttribute="top" secondItem="9n6-NG-rZq" secondAttribute="bottom" constant="23" id="kFU-7R-wq4"/>
                             <constraint firstItem="8Lb-ma-pY2" firstAttribute="leading" secondItem="hO2-11-qCj" secondAttribute="leadingMargin" constant="12" id="l5B-pC-7ee"/>
                             <constraint firstItem="8Lb-ma-pY2" firstAttribute="top" secondItem="9n6-NG-rZq" secondAttribute="bottom" constant="23" id="ror-vH-CeG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="8Lb-ma-pY2"/>
+                                <exclude reference="mnJ-oD-XXR"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="l5B-pC-7ee"/>
                                 <exclude reference="ror-vH-CeG"/>
+                                <exclude reference="9he-eZ-GyM"/>
+                                <exclude reference="kFU-7R-wq4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="8Lb-ma-pY2"/>
+                                <include reference="mnJ-oD-XXR"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="l5B-pC-7ee"/>
                                 <include reference="ror-vH-CeG"/>
+                                <include reference="9he-eZ-GyM"/>
+                                <include reference="kFU-7R-wq4"/>
                             </mask>
                         </variation>
                     </view>
@@ -172,6 +184,7 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="rabbit" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
     </resources>
