@@ -31,36 +31,51 @@
                                     <action selector="playQuickSound:" destination="xkU-DK-ARX" eventType="touchUpInside" id="94Z-fC-Tv7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-na-8K4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="xkU-DK-ARX" eventType="touchUpInside" id="4hl-Mh-AD0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="mnJ-oD-XXR" secondAttribute="trailing" constant="9" id="9he-eZ-GyM"/>
+                            <constraint firstItem="fD8-na-8K4" firstAttribute="centerX" secondItem="hO2-11-qCj" secondAttribute="centerX" id="N6r-nv-gU2"/>
                             <constraint firstItem="mnJ-oD-XXR" firstAttribute="top" secondItem="9n6-NG-rZq" secondAttribute="bottom" constant="23" id="kFU-7R-wq4"/>
                             <constraint firstItem="8Lb-ma-pY2" firstAttribute="leading" secondItem="hO2-11-qCj" secondAttribute="leadingMargin" constant="12" id="l5B-pC-7ee"/>
+                            <constraint firstItem="7zq-7z-Jxw" firstAttribute="top" secondItem="fD8-na-8K4" secondAttribute="bottom" constant="114" id="p1o-mu-7Xk"/>
                             <constraint firstItem="8Lb-ma-pY2" firstAttribute="top" secondItem="9n6-NG-rZq" secondAttribute="bottom" constant="23" id="ror-vH-CeG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="8Lb-ma-pY2"/>
                                 <exclude reference="mnJ-oD-XXR"/>
+                                <exclude reference="fD8-na-8K4"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="l5B-pC-7ee"/>
                                 <exclude reference="ror-vH-CeG"/>
                                 <exclude reference="9he-eZ-GyM"/>
                                 <exclude reference="kFU-7R-wq4"/>
+                                <exclude reference="N6r-nv-gU2"/>
+                                <exclude reference="p1o-mu-7Xk"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="8Lb-ma-pY2"/>
                                 <include reference="mnJ-oD-XXR"/>
+                                <include reference="fD8-na-8K4"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="l5B-pC-7ee"/>
                                 <include reference="ror-vH-CeG"/>
                                 <include reference="9he-eZ-GyM"/>
                                 <include reference="kFU-7R-wq4"/>
+                                <include reference="N6r-nv-gU2"/>
+                                <include reference="p1o-mu-7Xk"/>
                             </mask>
                         </variation>
                     </view>
