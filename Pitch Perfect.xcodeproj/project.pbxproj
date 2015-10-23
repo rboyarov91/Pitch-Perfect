@@ -15,6 +15,7 @@
 		E103214C1BDA7FEB003C35F9 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103214B1BDA7FEB003C35F9 /* Pitch_PerfectTests.swift */; };
 		E10321571BDA7FEB003C35F9 /* Pitch_PerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10321561BDA7FEB003C35F9 /* Pitch_PerfectUITests.swift */; };
 		E10321651BDAADAC003C35F9 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10321641BDAADAC003C35F9 /* PlaySoundsViewController.swift */; };
+		E10321671BDAB438003C35F9 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E10321661BDAB438003C35F9 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E10321561BDA7FEB003C35F9 /* Pitch_PerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectUITests.swift; sourceTree = "<group>"; };
 		E10321581BDA7FEB003C35F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10321641BDAADAC003C35F9 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		E10321661BDAB438003C35F9 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E10321361BDA7FEB003C35F9 /* AppDelegate.swift */,
 				E10321381BDA7FEB003C35F9 /* ViewController.swift */,
 				E103213A1BDA7FEB003C35F9 /* Main.storyboard */,
+				E10321661BDAB438003C35F9 /* movie_quote.mp3 */,
 				E10321641BDAADAC003C35F9 /* PlaySoundsViewController.swift */,
 				E103213D1BDA7FEB003C35F9 /* Assets.xcassets */,
 				E103213F1BDA7FEB003C35F9 /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				E10321411BDA7FEB003C35F9 /* LaunchScreen.storyboard in Resources */,
 				E103213E1BDA7FEB003C35F9 /* Assets.xcassets in Resources */,
+				E10321671BDAB438003C35F9 /* movie_quote.mp3 in Resources */,
 				E103213C1BDA7FEB003C35F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
