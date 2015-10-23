@@ -19,6 +19,7 @@ class PlaySoundsViewController: UIViewController {
             let filePathUrl = NSURL.fileURLWithPath(filePath)
             do {
                 try audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl)
+                audioPlayer.enableRate = true
             } catch {
                 print("couldn't create audio player from path reference")
             }
@@ -34,6 +35,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSlowSound(sender: AnyObject) {
+        audioPlayer.rate = 0.5
         audioPlayer.play()
     }
 
