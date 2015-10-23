@@ -3,19 +3,51 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="nck-fi-Euw">
             <objects>
-                <viewController id="xkU-DK-ARX" sceneMemberID="viewController">
+                <viewController id="xkU-DK-ARX" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9n6-NG-rZq"/>
                         <viewControllerLayoutGuide type="bottom" id="7zq-7z-Jxw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hO2-11-qCj">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lb-ma-pY2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="snail"/>
+                                <connections>
+                                    <action selector="playSlowSound:" destination="xkU-DK-ARX" eventType="touchUpInside" id="ccx-Z2-UGx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Lb-ma-pY2" firstAttribute="leading" secondItem="hO2-11-qCj" secondAttribute="leadingMargin" constant="12" id="l5B-pC-7ee"/>
+                            <constraint firstItem="8Lb-ma-pY2" firstAttribute="top" secondItem="9n6-NG-rZq" secondAttribute="bottom" constant="23" id="ror-vH-CeG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8Lb-ma-pY2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="l5B-pC-7ee"/>
+                                <exclude reference="ror-vH-CeG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8Lb-ma-pY2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="l5B-pC-7ee"/>
+                                <include reference="ror-vH-CeG"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHc-ar-kZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -135,11 +167,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skS-cz-V7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439.5" y="415"/>
+            <point key="canvasLocation" x="628.5" y="409"/>
         </scene>
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="snail" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
     </resources>
 </document>
