@@ -82,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHc-ar-kZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2212.5" y="415"/>
+            <point key="canvasLocation" x="2323.5" y="415"/>
         </scene>
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
@@ -123,7 +123,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0z-Vx-NeX"/>
-                                    <segue destination="xkU-DK-ARX" kind="show" id="mVJ-pg-4v9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,11 +174,12 @@
                         <outlet property="recordButton" destination="FDz-TS-eWl" id="ydU-12-4sE"/>
                         <outlet property="recordingInProgress" destination="XeY-1X-b9K" id="CEd-Yf-D2u"/>
                         <outlet property="stopButton" destination="gux-uf-g5b" id="SDc-aA-qqz"/>
+                        <segue destination="xkU-DK-ARX" kind="show" identifier="stopRecording" id="exf-ds-2lV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441.5" y="409"/>
+            <point key="canvasLocation" x="1572" y="415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PXh-yo-Zy9">
