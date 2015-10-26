@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,6 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7zq-7z-Jxw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hO2-11-qCj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lb-ma-pY2">
@@ -38,14 +40,23 @@
                                     <action selector="stopAudio:" destination="xkU-DK-ARX" eventType="touchUpInside" id="4hl-Mh-AD0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjn-7M-swD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipmunkSound:" destination="xkU-DK-ARX" eventType="touchUpInside" id="hu0-5M-GjB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="mnJ-oD-XXR" secondAttribute="trailing" constant="25" id="9he-eZ-GyM"/>
+                            <constraint firstItem="Rjn-7M-swD" firstAttribute="top" secondItem="8Lb-ma-pY2" secondAttribute="bottom" constant="26" id="IKa-jJ-jGx"/>
                             <constraint firstItem="fD8-na-8K4" firstAttribute="centerX" secondItem="hO2-11-qCj" secondAttribute="centerX" id="N6r-nv-gU2"/>
                             <constraint firstItem="mnJ-oD-XXR" firstAttribute="top" secondItem="9n6-NG-rZq" secondAttribute="bottom" constant="30" id="kFU-7R-wq4"/>
                             <constraint firstItem="8Lb-ma-pY2" firstAttribute="leading" secondItem="hO2-11-qCj" secondAttribute="leadingMargin" constant="25" id="l5B-pC-7ee"/>
                             <constraint firstItem="7zq-7z-Jxw" firstAttribute="top" secondItem="fD8-na-8K4" secondAttribute="bottom" constant="114" id="p1o-mu-7Xk"/>
+                            <constraint firstItem="Rjn-7M-swD" firstAttribute="leading" secondItem="hO2-11-qCj" secondAttribute="leadingMargin" constant="25" id="rac-lR-w71"/>
                             <constraint firstItem="8Lb-ma-pY2" firstAttribute="top" secondItem="9n6-NG-rZq" secondAttribute="bottom" constant="30" id="ror-vH-CeG"/>
                         </constraints>
                         <variation key="default">
@@ -53,10 +64,13 @@
                                 <exclude reference="8Lb-ma-pY2"/>
                                 <exclude reference="mnJ-oD-XXR"/>
                                 <exclude reference="fD8-na-8K4"/>
+                                <exclude reference="Rjn-7M-swD"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="l5B-pC-7ee"/>
                                 <exclude reference="ror-vH-CeG"/>
+                                <exclude reference="IKa-jJ-jGx"/>
+                                <exclude reference="rac-lR-w71"/>
                                 <exclude reference="9he-eZ-GyM"/>
                                 <exclude reference="kFU-7R-wq4"/>
                                 <exclude reference="N6r-nv-gU2"/>
@@ -68,10 +82,13 @@
                                 <include reference="8Lb-ma-pY2"/>
                                 <include reference="mnJ-oD-XXR"/>
                                 <include reference="fD8-na-8K4"/>
+                                <include reference="Rjn-7M-swD"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="l5B-pC-7ee"/>
                                 <include reference="ror-vH-CeG"/>
+                                <include reference="IKa-jJ-jGx"/>
+                                <include reference="rac-lR-w71"/>
                                 <include reference="9he-eZ-GyM"/>
                                 <include reference="kFU-7R-wq4"/>
                                 <include reference="N6r-nv-gU2"/>
@@ -118,9 +135,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gux-uf-g5b">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="176" y="445" width="50" height="50"/>
-                                </variation>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0z-Vx-NeX"/>
                                 </connections>
@@ -145,11 +159,11 @@
                             <mask key="constraints">
                                 <exclude reference="NIb-oC-fDY"/>
                                 <exclude reference="V9m-Sq-W9E"/>
+                                <exclude reference="hUV-kd-ONH"/>
+                                <exclude reference="yj9-dd-uKj"/>
                                 <exclude reference="QoL-7D-TcZ"/>
                                 <exclude reference="ocb-XZ-nsI"/>
                                 <exclude reference="t0m-w8-NTq"/>
-                                <exclude reference="hUV-kd-ONH"/>
-                                <exclude reference="yj9-dd-uKj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -161,11 +175,11 @@
                             <mask key="constraints">
                                 <include reference="NIb-oC-fDY"/>
                                 <include reference="V9m-Sq-W9E"/>
+                                <include reference="hUV-kd-ONH"/>
+                                <include reference="yj9-dd-uKj"/>
                                 <include reference="QoL-7D-TcZ"/>
                                 <include reference="ocb-XZ-nsI"/>
                                 <include reference="t0m-w8-NTq"/>
-                                <include reference="hUV-kd-ONH"/>
-                                <include reference="yj9-dd-uKj"/>
                             </mask>
                         </variation>
                     </view>
@@ -201,6 +215,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="rabbit" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>

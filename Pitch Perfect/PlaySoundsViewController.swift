@@ -40,6 +40,8 @@ class PlaySoundsViewController: UIViewController {
         playAudioAtRate(0.5)
     }
     
+    @IBAction func playChipmunkSound(sender: UIButton) {
+    }
     func playAudioAtRate(rate: Float){
         audioPlayer.stop()
         audioPlayer.rate = rate
